@@ -1,13 +1,13 @@
-#Contact Application
+# Contact Application
 This application is a POC to test the capabilities of creating new users in an in-memory database. 
 
 There is also functionality to be able to list all registered users. In addition to this, by authenticating a user, that particular user is able to gather information on which users are currently logged in.
 
-##Executing
+## Executing
 An executable jar is available to run the application standalone. 
 Please keep in mind that the application runs on port **8080** so be sure to keep this port open when running the jar.
 
-##Data Storage
+## Data Storage
 An in-memory database houses the data and can be accessed as follows, provided the application is running.
 
 <http://localhost:8080/h2-console>
@@ -18,10 +18,10 @@ An in-memory database houses the data and can be accessed as follows, provided t
 
 **Password:** *pleaseCallMe!*
 
-##Usage
+## Usage
 A sample Postman project is available to call the various endpoints on the application.
 
-####1.) Add User
+#### 1.) Add User
 The Add User feature allows you to add a new user.
 
 **Sample Request:**
@@ -40,7 +40,7 @@ The Add User feature allows you to add a new user.
 User added successfully.
 ```
 
-####2.) List Users
+#### 2.) List Users
 The List Users feature allows you to list all users currently registered in the database.
 
 **Sample Response:**
@@ -70,7 +70,7 @@ The List Users feature allows you to list all users currently registered in the 
 }
 ```
 
-####3.) Login
+#### 3.) Login
 The login feature allows you to authenticate your user. 
 This returns an authentication token which is valid for a total of 180 seconds. 
 Once authenticated, you are able to additional to listing all users, also see which users are currently logged in.
@@ -94,7 +94,7 @@ In order to see this information, you need to pass the authentication token as h
 }
 ```
 
-####4.) Logout
+#### 4.) Logout
 The logout feature allows you to invalidate your user session and expire the token.
 
 **Sample Response:**
@@ -105,5 +105,5 @@ The logout feature allows you to invalidate your user session and expire the tok
 }
 ```
 
-##Author
+## Author
 Hadley Scholtz
